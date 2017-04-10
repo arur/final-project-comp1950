@@ -1,150 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>BCIT : comp1950 : proto-site template</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/proto-site.css">
-</head>
-<body>
-  <header class="ps-header">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BCIT : comp1950 : proto-site template</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/proto-site.css">
+  </head>
+  <body>
+    <div class="ps-login">
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1>Proto-site title</h1>
-          </div>
-          <div class="col-2 ps-m-auto">
-            <a href="#" class="btn btn-block">Log In</a>
-          </div>
-        </div>
-      </div>
-  </header>
-  <nav class="ps-mainnav bg-faded">
-    <div class="container">
-      <div class="row">
-        <ul class="nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+        <ul class="nav justify-content-end">
+          <li class="nav-item ">
+            <a class="nav-link  text-white" href="">Forum</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Lectures</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Resources</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Quizzez</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Forum</a>
+            <a class="nav-link  text-white" href="">Log in</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control" type="text" placeholder="Search">
-          <span class="input-group-btn">
-            <button class="btn btn-secondary" type="submit">Go!</button>
-          </span>
-        </form>
       </div>
     </div>
-  </nav>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 ps-sidebar">
-        <div class="ps-links">
-          <div class="ps-toc-item">
-            <a class="ps-toc-link" href="#">Lecture 1</a>
-            <ul class="nav ps-sidenav">
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
+    <nav class="bg-faded ps-mainnav">
+      <div class="container">
+        <div class="navbar navbar-toggleable-md navbar-light">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+          </button>
+          <h1 class="navbar-brand mb-0">Comp1950 Course</h1>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Lectures</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quizzez</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
             </ul>
-          </div>
-          <div class="ps-toc-item active">
-            <a class="ps-toc-link" href="#">Lecture 2</a>
-            <ul class="nav ps-sidenav">
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
-          </div>
-          <div class="ps-toc-item">
-            <a class="ps-toc-link" href="#">Lecture 1</a>
-            <ul class="nav ps-sidenav">
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+            </form>
           </div>
         </div>
       </div>
-      <div class="col-md-9 ps-content">
-        <article>
-          <h2>Lecture Title</h2>
-          <section>
-            <h3>Section Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-          </section>
-          <section>
-            <h3>Section Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-          </section>
-          <section>
-            <h3>Section Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-          </section>
-          <section>
-            <h3>Section Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-          </section>
-          <section>
-            <h3>Section Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-          </section>
-          <section>
-            <h3>Section Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-          </section>
-        </article>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <div class="row">Copy</div>
-    </div>
-  </footer>
+    </nav>
+    <div class="ps-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 ps-sidebar">
+            <div class="ps-links">
+              <div class="ps-toc-item">
+                <a class="ps-toc-link" href="#">01 | tools & standarts</a>
+                <ul class="nav ps-sidenav">
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                </ul>
+              </div>
+              <div class="ps-toc-item active">
+                <a class="ps-toc-link" href="#">02 | html5</a>
+                <ul class="nav ps-sidenav">
+                  <li><a href="#s1">Hypertext Markup Language</a></li>
+                  <li><a href="#s2">HTML Created</a></li>
+                  <li><a href="#s3">HTML on the loose!</a></li>
+                  <li><a href="#s4">Attempting to fix the problem</a></li>
+                  <li><a href="#s5">Tighten up!</a></li>
+                  <li><a href="#s6">What is different about XHTML?</a></li>
+                </ul>
+              </div>
+              <div class="ps-toc-item">
+                <a class="ps-toc-link" href="#">03 | css techniques</a>
+                <ul class="nav ps-sidenav">
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                </ul>
+              </div>
+              <div class="ps-toc-item">
+                <a class="ps-toc-link" href="#">04 | css layouts</a>
+                <ul class="nav ps-sidenav">
+                  <li><a href="#">Link</a></li>
+                </ul>
+              </div>
+              <div class="ps-toc-item">
+                <a class="ps-toc-link" href="#">05 | responsive css</a>
+                <ul class="nav ps-sidenav">
+                  <li><a href="#">Link</a></li>
+                </ul>
+              </div>
+              <div class="ps-toc-item">
+                <a class="ps-toc-link" href="#">06 | css3</a>
+                <ul class="nav ps-sidenav">
+                  <li><a href="#">Link</a></li>
+                </ul>
+              </div>
+              <div class="ps-toc-item">
+                <a class="ps-toc-link" href="#">07 | javascript frameworks</a>
+                <ul class="nav ps-sidenav">
+                  <li><a href="#">Link</a></li>
+                </ul>
+              </div>
+              <div class="ps-toc-item">
+                <a class="ps-toc-link" href="#">08 | dynamic content</a>
+                <ul class="nav ps-sidenav">
+                  <li><a href="#">Link</a></li>
+                </ul>
+              </div>
+              <div class="ps-toc-item">
+                <a class="ps-toc-link" href="#">09 | templating, seo</a>
+                <ul class="nav ps-sidenav">
+                  <li><a href="#">Link</a></li>
+                </ul>
+              </div>
+              <div class="ps-toc-item">
+                <a class="ps-toc-link" href="#">10 | methodology</a>
+                <ul class="nav ps-sidenav">
+                  <li><a href="#">Link</a></li>
+                </ul>
+              </div>
+              <div class="ps-toc-item">
+                <a class="ps-toc-link" href="#">11 | project work</a>
+                <ul class="nav ps-sidenav">
+                  <li><a href="#">Link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 ps-content">
+            <article>
+              <h2>Lecture two: HTML5</h2>
+              <section id="s1">
+                <h3>Hypertext Markup Language</h3>
+                <div class="contblock">
+                  <p>It all starts here in one form or another: HTML</p>
+                  <ul>
+                    <li>What started as a language defined by <a href="http://www.w3.org/MarkUp/SGML/">SGML</a> <em>(Standard Generalized Markup Language)</em>, HTML is used to mark up billions of pages, making up the bulk of the web.</li>
+                    <li>From a common origin, 3 distinct version have emerged:
+                      <ol>
+                        <li><strong>HTML 1 - 4.01</strong>: This was developed in rapid succession in the 1990's</li>
+                        <li><strong>XHTML 1, 1.1, 2</strong>: A stricter version, created as an answer to the loose development of HTML</li>
+                        <li><strong>HTML5 </strong>- a reaction to the draconian ruleset proposed by the W3C for the future of MLs beyond XHTML 1.1</li>
+                      </ol>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section id="s2">
+                <h3>HTML Created</h3>
+                <div class="contblock">
+                  <ul>
+                    <li>Late 1991, Tim Berners-Lee releases the first iteration of what would become HTML 2.0 (there was no real 1.0+)</li>
+                    <li>HTML was a language created at the dawn of the Web, using SGML (Standard Generalized Markup Language) as a template</li>
+                    <li>Over the next decade, various additions, improvements and changes are introduced</li>
+                    <li>The last official specification was the service release of HTML 4.01 in December 1999</li>
+                    <li>Initially used for documents and a place for the technically inclined, the web did not have the international pervasiveness it does today</li>
+                    <li>Most developers were new to the language and there were no real classes in it</li>
+                    <li>People had to learn as they went along</li>
+                    <li>A lot of early sites are poorly designed</li>
+                  </ul>
+                  <h4>HTML 4.01 template</h4>
+                  <div id="preview"><pre><code class="language-html"><span class="ps-code-doctype">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+ "http://www.w3.org/TR/html4/loose.dtd"&gt;</span>
+<span class="ps-code-tag">&lt;<span class="ps-code-title">html</span>&gt;</span>
+ <span class="ps-code-tag">&lt;<span class="ps-code-title">head</span>&gt;</span>
+   <span class="ps-code-tag">&lt;<span class="ps-code-title">title</span>&gt;</span><span class="ps-code-tag">&lt;/<span class="ps-code-title">title</span>&gt;</span>
+   <span class="ps-code-tag">&lt;<span class="ps-code-title">meta</span> <span class="ps-code-attribute">http-equiv</span>=<span class="ps-code-value">"Content-Type"</span> <span class="ps-code-attribute">content</span>=<span class="ps-code-value">"text/html; charset=utf-8"</span>&gt;</span>
+ <span class="ps-code-tag">&lt;/<span class="ps-code-title">head</span>&gt;</span>
+ <span class="ps-code-tag">&lt;<span class="ps-code-title">body</span>&gt;</span>
+ <span class="ps-code-tag">&lt;/<span class="ps-code-title">body</span>&gt;</span>
+<span class="ps-code-tag">&lt;/<span class="ps-code-title">html</span>&gt;</span></code></pre>
+                  </div>
+                </div>
+              </section>
+              <section id="s3">
+                <h3>HTML on the loose!</h3>
+                <div class="contblock">
+                  <ul>
+                    <li>Despite it's reputation as a loose language, HTML 4.01 can be written strict just like XHTML and HTML5 can</li>
+                    <li>The problem was not <em>entirely</em> with the language or the authors.  It was with the <em>browsers</em>.</li>
+                    <li>Browser manufacturers created User Agents that would read code, interpret it, fix any mistakes and render a page, without any visible errors.</li>
+                    <li>It was this that led to coders exploiting problems in browsers and creating pages that broke when new specs or updated User Agents (browsers) came out</li>
 
-  <!-- jQuery, Tether, Bootstrap JS. -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-</body>
+                    <li>Okay, so now there is a problem. <strong>Millions</strong> of pages are being produced with sloppy code because the UAs let it happen</li>
+                    <li>The web is becoming filled with Tag Soup that makes it hard to index, with search tools having to trust things like META keywords and descriptions</li>
+                    <li>A better solution is required: Get Strict!</li>
+                  </ul>
+                </div>
+              </section>
+              <section id="s4">
+                <h3>Attempting to fix the problem</h3>
+                <div class="contblock">
+                  <h4>Moving on to XHTML1</h4>
+                  <div class="contblock">
+                    <ul>
+                      <li>After years of <em>HTML</em>development, 4.01 became the "Last Official Release"</li>
+                      <li>The Web Working Group had taken a look at XML (Extensible Markup Language) and liked what they saw: a requirement for valid markup in order for an XML application to work</li>
+                      <li>Why not take the ruleset from XML (lower case attributes, everything in quotes, close every tag) and apply it to HTML? Yay!</li>
+                      <li>That should fix everything, right?</li>
+                      <li>Coding wasn't <em>actually</em> fixed by the introduction of XHTML. Fixes were <em>suggested</em> by the specification, but most browsers would render the page anyway.</li>
+                      <li>This is because 99% of XHTML pages are reporting their MIME type as: <code>text/html</code></li>
+                      <li>To get pages to render using the appropriate DOCTYPE of XHTML, pages would have to be delivered with the MIME type of <code>application/xhtml+xml</code></li>
+                      <li>Using that MIME type, however, brought with it a rather dire proviso:</li>
+                      <li>The error handling specified in XHTML 1.1 meant <strong>all errors will cause the browser to cease rendering</strong></li>
+                      <li>Yes, you read that correctly. That means <strong>any</strong> error will throw an warning to the user and the page will not be shown</li>
+                      <li>Try to imagine the Web actually working in this way</li>
+                      <li>Why was this done? Because the developers of XHTML wanted to force strict coding rules so that the Web could be seen as a giant application.  Reliable code on every page meant you could use the data anywhere</li>
+                    </ul>
+                  </div>
+              </section>
+              <section id="s5">
+                <h3>Tighten up!</h3>
+                <div class="contblock">
+                  <ul>
+                    <li>X = eXtensible</li>
+                    <li>X = XML related</li>
+                    <li>A reformation of HTML reformulated in XHTML</li>
+                    <li>First major update to HTML since the 4.01 specification was released in 1999.</li>
+                    <li><strong>Note</strong>-<em> XHTML Development has ceased entirely. More on that later </em></li>
+                    <li>Better, more predictable coding patterns</li>
+                    <li>"verifiable" or "well-formed" code can be produced</li>
+                    <li>Forces a higher standard of HTML</li>
+                    <li>Porting to HTML5 is easy (if you also observe <strong>semantic</strong> guidelines)</li>
+                  </ul>
+                </div>
+              </section>
+              <section id="s6">
+                <h3>What is different about XHTML?</h3>
+                <div class="contblock">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
+                </div>
+              </section>
+            </article>
+                </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="row">Copy</div>
+        </div>
+      </footer>
+
+      <!-- jQuery, Tether, Bootstrap JS. -->
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+      <script src="src/main.js"></script>
+  </body>
 </html>
