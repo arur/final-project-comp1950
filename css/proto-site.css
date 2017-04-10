@@ -1,0 +1,23 @@
+/* common */
+.ps-header, .ps-mainnav {
+  border-bottom: 1px solid rgb(221,221,221);
+}
+/* ps-header */
+.ps-m-auto {
+  margin: auto;
+}
+/* ps-mainnav */
+.ps-mainnav {
+  margin-bottom: 4rem;
+}
+/* ps-sidebar */
+/* ps-links */
+/* ps-toc-item */
+/* ps-toc-links */
+/* ps-sidenav */
+.ps-sidenav {
+  display: none;
+}
+.active > .ps-sidenav {
+  display: block;
+}
