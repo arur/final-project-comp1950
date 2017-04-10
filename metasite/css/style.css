@@ -1,0 +1,270 @@
+/*  Authors: Hsiu-Man Angela Wu, Hsiu-Man Angela Wu, Kelly Choi, Artur Hayrapetyan    */
+
+
+@import url('https://fonts.googleapis.com/css?family=Marcellus|Petit+Formal+Script');
+@font-face {
+   font-family: 'Fira Sans Light';
+   src: url(../font/firasans-light.otf);
+}
+
+
+/* GENERAL rules
+----------------------------------------------------*/
+
+html, body {
+	height: 100%;
+}
+
+body {
+	/*background-image: url('../img/pattern6.png');*/
+	font-family: 'Fira Sans Light', sans-serif;
+	font-size: 16px;
+}
+
+
+p {
+	line-height: 24px;
+}
+
+
+h2 {
+	font-size: 25px;
+	border-left: 5px double black;
+	padding-left: 5px;
+	margin-top: 50px;
+
+}
+
+h3 {
+	margin-top: 0;
+	margin-bottom: 5px;
+	color: #067cb9;
+	font-size: 1.25em;
+}
+
+.content-container {
+	width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+
+.page-link {
+	display: inline-block;
+	color: #363949;
+}
+
+.page-link:visited {
+	color: #363949;
+}
+
+.page-link:hover {
+	background-color: #f96a23;
+	color: white;
+	text-decoration: none;
+}
+
+.section-style {
+	background-color: white;
+	padding: 25px;
+	border-top: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+	box-sizing: border-box;
+
+}
+
+
+.section-heading {
+	font-family: 'Marcellus', serif;
+	margin: 0;
+	color: #288384;
+}
+
+
+/* NAVIGATION, MAIN HEADING & IMAGE rules
+----------------------------------------------------*/
+
+nav {
+	background-color: black;
+	width: 100%;
+	height: 50px;
+	font-family: 'Marcellus', serif;
+	font-size: 18px;
+	color: lightgray;
+	position: fixed;
+	z-index: 10;
+
+}
+
+nav > ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	right: 50px;
+}
+
+.nav-item {
+	display: inline-block;
+	margin-left: 30px;
+	line-height: 50px;
+}
+
+
+.nav-link {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	line-height: 10px;
+	padding: 10px;
+}
+
+.nav-link:visited {
+	color: white;
+}
+
+.nav-link:hover {
+	color: black;
+	background-color: #ececec;
+}
+
+
+
+#current-page {
+	border: 1px solid lightgray;
+	box-sizing: border-box;
+	padding: 10px;
+	line-height: 10px;
+}
+
+
+#intro {
+	display: table;
+	width: 100%;
+	height: 500px;
+	background-color: white;
+	text-align: center;
+}
+
+#intro-heading {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+#intro-heading > h1 {
+	margin:0;
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 20px;
+	font-family: 'Petit Formal Script', serif;
+}
+
+
+#protosite-link {
+	font-size: 20px;
+	text-decoration: none;
+}
+
+#image-main {
+	background-image: url('../img/main.jpg');
+	height: 500px;
+	background-repeat: no-repeat;
+/*	background-attachment: fixed;*/
+	background-size: cover;
+	background-position: center;
+	/* The pattern to follow when using the background property to define several space delimited values at once:
+	background: <background-color> | <background-image> | <background-repeat> | <background-attachment> | <background-position>*/
+}
+
+
+/* SECTION-RATIONALE rules
+----------------------------------------------------*/
+
+#section-rationale {
+	padding-top: 50px;
+	overflow: auto;
+}
+
+
+.p-margin-bottom {
+	margin-bottom: 30px;
+}
+
+
+.three-columns {
+	width: 30%;
+	float: left;
+	margin-right: 45px;
+	margin-bottom: 30px;
+}
+
+.three-columns:nth-of-type(3n) {
+	margin-right: 0;
+}
+
+
+.clear-float {
+	clear: left;
+}
+
+
+
+
+/* FOOTER rules
+----------------------------------------------------*/
+footer {
+	background-color: black;
+	height: 130px;
+	position: relative;
+	clear: left;
+}
+
+footer ul {
+	display: inline-block;
+	padding: 0;
+	list-style-type: none;
+	color: white;
+	font-size: 14px;
+}
+
+footer li {
+	display: inline-block;
+	margin: 30px 20px;
+}
+
+footer li:first-of-type {
+	margin-left: 0;
+}
+
+footer a {
+	display: block;
+	padding: 2px;
+}
+
+footer a:link {
+	color: #ececec;
+	text-decoration: none;
+}
+
+footer a:visited {
+	color: #ececec;
+}
+
+footer a:hover {
+	color: black;
+	background-color: #ececec;
+}
+
+
+#bottom-border {
+	height: 22px;
+	background-color: #288384;
+	width: 100%;
+	text-align: center;
+	line-height: 22px;
+	font-size: 15px;
+	color: white;
+}
+
+
