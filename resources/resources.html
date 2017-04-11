@@ -3,10 +3,21 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>BCIT : comp1950 : proto-site template</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The website for BCIT students of the 12 week version of COMP 1950.">
+
+    <title>BCIT : comp1950 : Resources</title>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/resources.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"
+      integrity="sha256-sqQlcOZwgKkBRRn5WvShSsuopOdq9c3U+StqgPiFhHQ="
+      crossorigin="anonymous"></script>
+    <![endif]-->
+
   </head>
   <body>
     <div class="ps-login">
@@ -29,13 +40,13 @@
           <h1 class="navbar-brand mb-0">Comp1950</h1>
           <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Lectures</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link" href="#">Resources</a>
               </li>
               <li class="nav-item">
@@ -134,25 +145,33 @@
                 <div class="contblock">
                   <p>There is no official textbook for comp1950, but if you wish to supplement the online course notes and examples you may find the following optional texts useful:</p>
 
-              		<img src="images/web_dev_text.jpg" alt="CSS3 for web designers" />
-              		<p><strong>Web Development and Design Foundations with HTML5, 7th Edition</strong><br />
-              		By Terry Felke-Morris</p>
-              		<p>ISBN: <code>978-0-1335717-8-3</code></p>
-              		<p><a href="http://www.pearsonhighered.com/educator/product/Web-Development-and-Design-Foundations-with-HTML5-7E/9780133571783.page">Text website</a></p>
-              		<div style="clear:both;"></div>
-              				<br />
-              				<img src="images/aba-html.png" alt="HTML5 for web designers" />
-              		<p><strong>HTML5 for web designers</strong><br />By Jeremy Keith</p>
-              		<p>ISBN: <code>978-0-9844425-0-8</code></p>
-              		<p><a href="http://www.abookapart.com/products/html5-for-web-designers">Text website</a></p>
-              		<div style="clear:both;"></div>
-              		<br />
-              		<img src="images/aba-css.png" alt="CSS3 for web designers" />
-              		<p><strong>CSS3 for web designers</strong><br />By Dan Cederholm</p>
-              		<p>ISBN: <code>978-0-9844425-2-2</code></p>
-              		<p><a href="http://www.abookapart.com/products/css3-for-web-designers">Text website</a></p>
-              		<div style="clear:both;"></div>
-              		</div>
+                  <div class="ps-book clearfix">
+                    <img src="images/web_dev_text.jpg" alt="CSS3 for web designers" />
+                    <div>
+                      <h5>Web Development and Design Foundations with HTML5, 7th Edition</h5>
+                      <p>By Terry Felke-Morris</p>
+                      <p>ISBN: <code>978-0-1335717-8-3</code></p>
+                      <p><a href="http://www.pearsonhighered.com/educator/product/Web-Development-and-Design-Foundations-with-HTML5-7E/9780133571783.page">Text website</a></p>
+                    </div>
+                  </div>
+                  <div class="ps-book clearfix">
+                    <img src="images/aba-html.png" alt="HTML5 for web designers" />
+                    <div>
+                      <h5>HTML5 for web designers</h5>
+                      <p>By Jeremy Keith</p>
+                      <p>ISBN: <code>978-0-9844425-0-8</code></p>
+                      <p><a href="http://www.abookapart.com/products/html5-for-web-designers">Text website</a></p>
+                    </div>
+                  </div>
+                  <div class="ps-book clearfix">
+                    <img src="images/aba-css.png" alt="CSS3 for web designers" />
+                    <div>
+                      <h5>CSS3 for web designers</h5>
+                      <p>By Dan Cederholm</p>
+                      <p>ISBN: <code>978-0-9844425-2-2</code></p>
+                      <p><a href="http://www.abookapart.com/products/css3-for-web-designers">Text website</a></p>
+                    </div>
+                  </div>
                 </div>
               </section>
 

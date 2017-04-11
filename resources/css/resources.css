@@ -134,10 +134,16 @@
   color: #2aa198;
 }
 
-/* resources content only */
-
-img{
+/* resources content only | arur: dublicated to css/proto-site.css */
+/* .ps-book */
+.ps-book {
+  margin-bottom: 1.25rem;
+}
+.ps-book p {
+  margin-bottom: 0.5rem;
+}
+.ps-book img{
   width: 125px;
   float: left;
-  margin-right: 8px;
+  margin-right: 1rem;
 }
