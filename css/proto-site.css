@@ -1,14 +1,9 @@
-/* colors */
-/*
-  --main-color: #4484CE;
-  --main-color: #07294d;
-  --main-color: #ffc600;
-  #
+/* colors
+
   --main-color: #0B3C5D;
   --main-shade: #1D2731;
   --main-light: #328CC1;
   --accent-color: #D9B310;
-  #
 */
 :root {
   --main-color: #0B3C5D;
@@ -38,6 +33,9 @@
   background-color: var(--main-color);
 }
 /* ps-sidebar */
+.ps-sidebar {
+  margin-bottom: 2rem;
+}
 /* ps-links */
 /* ps-toc-item */
 .ps-toc-item > a {
@@ -75,6 +73,9 @@
   display: block;
 }
 /* ps-content */
+.ps-content {
+  margin-bottom: 2rem;
+}
 .ps-content > article {
   padding-left: 1.5rem;
 }
@@ -88,6 +89,28 @@
 }
 .ps-content section {
   line-height: 1.7;
+}
+/* ps-footer */
+.ps-footer {
+  background: var(--main-color);
+  color: rgba(255, 255, 255, .6);
+  border-bottom: 2.5rem solid var(--main-shade);
+  font-size: .75rem;
+}
+.ps-footer a {
+  color: var(--accent-color);
+}
+.ps-footer .row {
+  padding: 2.5rem 0;
+}
+.ps-footer h4 {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.ps-associated a {
+  padding-bottom: 0.25rem;
 }
 /* code */
 #preview {
