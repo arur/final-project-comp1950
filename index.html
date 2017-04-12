@@ -1,317 +1,151 @@
 <!DOCTYPE html>
+<!-- Authors:
+	  Hsiu-Man Angela Wu, Kelly Choi, Artur Hayrapetyan -->
+	  
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="The website for BCIT students of the 12 week version of COMP 1950.">
+<head>
+	<title>AKA Metasite</title>
+	<meta charset="utf-8" />
+	<!-- <meta name="viewport" content="initial-scale=1.0, width=device-width" /> -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 
-    <title>BCIT : comp1950 : Lecture 02</title>
+        <!--[if lt IE 9]>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"
+          integrity="sha256-sqQlcOZwgKkBRRn5WvShSsuopOdq9c3U+StqgPiFhHQ="
+          crossorigin="anonymous"></script>
+        <![endif]-->
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/proto-site.css">
-    <link rel="alternate stylesheet" title="projector" href="css/projector.css">
+</head>
+<body>
 
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"
-      integrity="sha256-sqQlcOZwgKkBRRn5WvShSsuopOdq9c3U+StqgPiFhHQ="
-      crossorigin="anonymous"></script>
-    <![endif]-->
+	<div id="top"></div>
 
-  </head>
-  <body>
-    <div class="ps-login">
-      <div class="container">
-        <ul class="nav justify-content-end">
-          <li class="nav-item ">
-            <a class="nav-link  text-white" href="">Forum</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link  text-white" href="">Log in</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <nav class="bg-faded ps-mainnav">
-      <div class="container">
-        <div class="navbar navbar-toggleable-md navbar-light">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
-          </button>
-          <h1 class="navbar-brand mb-0">Comp1950</h1>
-          <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Lectures</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Resources</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Quizzes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search">
-              <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <div class="ps-content">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 ps-sidebar">
-            <div id="toc">
-              <div class="ps-toc-item">
-                <a class="ps-toc-title collapsed" data-toggle="collapse" href="#secondaryNav">lectures</a>
-              </div>
-              <div id="secondaryNav" class="ps-links collapse">
-                <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">01 | tools & standarts</a>
-                  <ul class="nav ps-sidenav">
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                  </ul>
-                </div>
-                <div class="ps-toc-item active">
-                  <a class="ps-toc-link" href="#">02 | html5</a>
-                  <ul class="nav ps-sidenav">
-                    <li><a href="#s1">Hypertext Markup Language</a></li>
-                    <li><a href="#s2">HTML Created</a></li>
-                    <li><a href="#s3">HTML on the loose!</a></li>
-                    <li><a href="#s4">Attempting to fix the problem</a></li>
-                    <li><a href="#s5">Tighten up!</a></li>
-                    <li><a href="#s6">What is different about XHTML?</a></li>
-                    <li><a href="#s7">XHTML Documents</a></li>
+	<nav>
+		<ul>
+			<li class="nav-item" id="current-page">Rationale</li>
+			<li class="nav-item"><a class= "nav-link" href="#">Team Members</a></li>
+			<li class="nav-item"><a class= "nav-link" href="#">Sitemap</a></li>
+			<li class="nav-item"><a class= "nav-link" href="#">Proto-site</a></li>
+		</ul>
+	</nav>
 
-                  </ul>
-                </div>
-                <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">03 | css techniques</a>
-                  <ul class="nav ps-sidenav">
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                  </ul>
-                </div>
-                <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">04 | css layouts</a>
-                  <ul class="nav ps-sidenav">
-                    <li><a href="#">Link</a></li>
-                  </ul>
-                </div>
-                <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">05 | responsive css</a>
-                  <ul class="nav ps-sidenav">
-                    <li><a href="#">Link</a></li>
-                  </ul>
-                </div>
-                <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">06 | css3</a>
-                  <ul class="nav ps-sidenav">
-                    <li><a href="#">Link</a></li>
-                  </ul>
-                </div>
-                <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">07 | javascript frameworks</a>
-                  <ul class="nav ps-sidenav">
-                    <li><a href="#">Link</a></li>
-                  </ul>
-                </div>
-                <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">08 | dynamic content</a>
-                  <ul class="nav ps-sidenav">
-                    <li><a href="#">Link</a></li>
-                  </ul>
-                </div>
-                <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">09 | templating, seo</a>
-                  <ul class="nav ps-sidenav">
-                    <li><a href="#">Link</a></li>
-                  </ul>
-                </div>
-                <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">10 | methodology</a>
-                  <ul class="nav ps-sidenav">
-                    <li><a href="#">Link</a></li>
-                  </ul>
-                </div>
-                <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">11 | project work</a>
-                  <ul class="nav ps-sidenav">
-                    <li><a href="#">Link</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-9 ps-content">
-            <article>
-              <h2>Lecture two: HTML5</h2>
-              <section id="s1">
-                <h3>Hypertext Markup Language</h3>
-                <div class="contblock">
-                  <p>It all starts here in one form or another: HTML</p>
-                  <ul>
-                    <li>What started as a language defined by <a href="http://www.w3.org/MarkUp/SGML/">SGML</a> <em>(Standard Generalized Markup Language)</em>, HTML is used to mark up billions of pages, making up the bulk of the web.</li>
-                    <li>From a common origin, 3 distinct version have emerged:
-                      <ol>
-                        <li><strong>HTML 1 - 4.01</strong>: This was developed in rapid succession in the 1990's</li>
-                        <li><strong>XHTML 1, 1.1, 2</strong>: A stricter version, created as an answer to the loose development of HTML</li>
-                        <li><strong>HTML5 </strong>- a reaction to the draconian ruleset proposed by the W3C for the future of MLs beyond XHTML 1.1</li>
-                      </ol>
-                    </li>
-                  </ul>
-                </div>
-              </section>
-              <section id="s2">
-                <h3>HTML Created</h3>
-                <div class="contblock">
-                  <ul>
-                    <li>Late 1991, Tim Berners-Lee releases the first iteration of what would become HTML 2.0 (there was no real 1.0+)</li>
-                    <li>HTML was a language created at the dawn of the Web, using SGML (Standard Generalized Markup Language) as a template</li>
-                    <li>Over the next decade, various additions, improvements and changes are introduced</li>
-                    <li>The last official specification was the service release of HTML 4.01 in December 1999</li>
-                    <li>Initially used for documents and a place for the technically inclined, the web did not have the international pervasiveness it does today</li>
-                    <li>Most developers were new to the language and there were no real classes in it</li>
-                    <li>People had to learn as they went along</li>
-                    <li>A lot of early sites are poorly designed</li>
-                  </ul>
-                  <h4>HTML 4.01 template</h4>
-                  <div id="preview"><pre><code class="language-html"><span class="ps-code-doctype">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
- "http://www.w3.org/TR/html4/loose.dtd"&gt;</span>
-<span class="ps-code-tag">&lt;<span class="ps-code-title">html</span>&gt;</span>
- <span class="ps-code-tag">&lt;<span class="ps-code-title">head</span>&gt;</span>
-   <span class="ps-code-tag">&lt;<span class="ps-code-title">title</span>&gt;</span><span class="ps-code-tag">&lt;/<span class="ps-code-title">title</span>&gt;</span>
-   <span class="ps-code-tag">&lt;<span class="ps-code-title">meta</span> <span class="ps-code-attribute">http-equiv</span>=<span class="ps-code-value">"Content-Type"</span> <span class="ps-code-attribute">content</span>=<span class="ps-code-value">"text/html; charset=utf-8"</span>&gt;</span>
- <span class="ps-code-tag">&lt;/<span class="ps-code-title">head</span>&gt;</span>
- <span class="ps-code-tag">&lt;<span class="ps-code-title">body</span>&gt;</span>
- <span class="ps-code-tag">&lt;/<span class="ps-code-title">body</span>&gt;</span>
-<span class="ps-code-tag">&lt;/<span class="ps-code-title">html</span>&gt;</span></code></pre>
-                  </div>
-                </div>
-              </section>
-              <section id="s3">
-                <h3>HTML on the loose!</h3>
-                <div class="contblock">
-                  <ul>
-                    <li>Despite it's reputation as a loose language, HTML 4.01 can be written strict just like XHTML and HTML5 can</li>
-                    <li>The problem was not <em>entirely</em> with the language or the authors.  It was with the <em>browsers</em>.</li>
-                    <li>Browser manufacturers created User Agents that would read code, interpret it, fix any mistakes and render a page, without any visible errors.</li>
-                    <li>It was this that led to coders exploiting problems in browsers and creating pages that broke when new specs or updated User Agents (browsers) came out</li>
 
-                    <li>Okay, so now there is a problem. <strong>Millions</strong> of pages are being produced with sloppy code because the UAs let it happen</li>
-                    <li>The web is becoming filled with Tag Soup that makes it hard to index, with search tools having to trust things like META keywords and descriptions</li>
-                    <li>A better solution is required: Get Strict!</li>
-                  </ul>
-                </div>
-              </section>
-              <section id="s4">
-                <h3>Attempting to fix the problem</h3>
-                <div class="contblock">
-                  <h4>Moving on to XHTML1</h4>
-                  <div class="contblock">
-                    <ul>
-                      <li>After years of <em>HTML</em>development, 4.01 became the "Last Official Release"</li>
-                      <li>The Web Working Group had taken a look at XML (Extensible Markup Language) and liked what they saw: a requirement for valid markup in order for an XML application to work</li>
-                      <li>Why not take the ruleset from XML (lower case attributes, everything in quotes, close every tag) and apply it to HTML? Yay!</li>
-                      <li>That should fix everything, right?</li>
-                      <li>Coding wasn't <em>actually</em> fixed by the introduction of XHTML. Fixes were <em>suggested</em> by the specification, but most browsers would render the page anyway.</li>
-                      <li>This is because 99% of XHTML pages are reporting their MIME type as: <code>text/html</code></li>
-                      <li>To get pages to render using the appropriate DOCTYPE of XHTML, pages would have to be delivered with the MIME type of <code>application/xhtml+xml</code></li>
-                      <li>Using that MIME type, however, brought with it a rather dire proviso:</li>
-                      <li>The error handling specified in XHTML 1.1 meant <strong>all errors will cause the browser to cease rendering</strong></li>
-                      <li>Yes, you read that correctly. That means <strong>any</strong> error will throw an warning to the user and the page will not be shown</li>
-                      <li>Try to imagine the Web actually working in this way</li>
-                      <li>Why was this done? Because the developers of XHTML wanted to force strict coding rules so that the Web could be seen as a giant application.  Reliable code on every page meant you could use the data anywhere</li>
-                    </ul>
-                  </div>
-              </section>
-              <section id="s5">
-                <h3>Tighten up!</h3>
-                <div class="contblock">
-                  <ul>
-                    <li>X = eXtensible</li>
-                    <li>X = XML related</li>
-                    <li>A reformation of HTML reformulated in XHTML</li>
-                    <li>First major update to HTML since the 4.01 specification was released in 1999.</li>
-                    <li><strong>Note</strong>-<em> XHTML Development has ceased entirely. More on that later </em></li>
-                    <li>Better, more predictable coding patterns</li>
-                    <li>"verifiable" or "well-formed" code can be produced</li>
-                    <li>Forces a higher standard of HTML</li>
-                    <li>Porting to HTML5 is easy (if you also observe <strong>semantic</strong> guidelines)</li>
-                  </ul>
-                </div>
-              </section>
-              <section id="s6">
-                <h3>What is different about XHTML?</h3>
-                <div class="contblock">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. </p>
-                </div>
-              </section>
-              <section id="s7">
-                <h3>XHTML Documents</h3>
-                <div class="contblock">
-                  <p><strong>DTD: Document Type Definition</strong></p>
-                    <ul>
-                      <li>A description of the document, and the legal definitions that fall within it.</li>
-                      <li>The DTD defines the syntax of the page in SGML.</li>
-                      <li>This translates to: Because XHTML is just the application of XML to HTML, you need to tell the browser (the interpreter) how to interpret all of the code on the page.</li>
-                  </ul>
-                </div>
-              </section>
-            </article>
-                </div>
-          </div>
-        </div>
-      </div>
-      <footer class="ps-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 ps-info">
-              <h4>About</h4>
-              <div class="intro">
-                <p>This website is for BCIT students of the 12 week version of COMP 1950.</p>
-                <p>Check the <a href="http://www.bcit.ca/study/courses/comp1950">course catalogue at BCIT</a> to see when this course is running next.</p>
-              </div>
-            </div>
-            <div class="col-md-3 offset-md-1 ps-associated">
-              <h4>Associated</h4>
-              <div class="nav flex-column">
-                <a href="http://bcitcomp.ca/students/">students on bcitcomp.ca</a>
-                <a href="http://my.bcit.ca/">my.bcit</a>
-                <a href="http://www.bcit.ca/">bcit</a>
-                <a href="http://www.bcit.ca/cas/computing/">bcit: computing</a>
-              </div>
-              <p></p>
-            </div>
-            <div class="col-md-3 offset-md-1 ps-contact">
-              <h4>Contacts</h4>
-              <div class="">Email: <a href="#" class="">jeff parker</a></div>
-            </div>
-          </div>
-        </div>
-      </footer>
+	<section id="intro" class="section-style">
+		<div id="intro-heading">
+			<h1>Our website is the best</h1>
+			<a href="#" id="protosite-link" class="page-link">Explore our protosite</a>
+		</div>
+	</section>
 
-      <!-- jQuery, Tether, Bootstrap JS. -->
-      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-      <script src="src/main.js"></script>
-  </body>
+	<div id="image-main">
+	</div>
+
+
+	<section id="section-rationale" class="section-style">
+
+		<div class="content-container">
+			<h1 class="section-heading">Rationale</h1>
+		   <p class="p-margin-bottom">Through a thorough analysis of the clients and end-users needs, we were able to identify the top three goals for the COMP1950 website:</p>
+		   <ol>
+		      <li>Ability to use lecture notes as an effective study aid</li>
+		      <li>Ability to easily access in-class exercises</li>
+		      <li>Ability to create an online learning environment that is supportive and intuitive</li>
+		   </ol>
+			
+			
+		   <h2>Current Issues</h2>
+
+		      <p class="p-margin-bottom">With the above goals kept in mind, we analyzed the current COMP1950 website and identified the following issues.</p>
+		      
+		      <div class="three-columns">
+		      <h3>Difficult to Find Information</h3>
+		      <p>The current content structure of each lecture page makes it difficult to find information, access exercises, and view examples. The student is constantly scrolling up and down each page to search for specific information. This proves to be a less effective learning experience, as the student spends more time searching for information rather than digesting information.</p>
+		      </div>
+
+		      <div class="three-columns">
+		      <h3>Very Text Heavy</h3>
+		      <p>The current website is very text heavy, which in addition with the long page scroll, creates an overwhelming experience for the student. The headings used is the same or similar size to the body copy, and in general, there is a lack of headings used throughout the entire website. This decreases usability and visual consistency as it does not allow students to easily scan the content.</p>
+		      </div>
+
+		      <div class="three-columns">
+		      <h3>Not Visually Appealing</h3>
+		      <p>The current website uses three main colours in it's colour scheme: maroon, light and dark grey, and black. The current colour scheme is dull and uninspiring. This differs from the client's request of wanting the website to be visually appealing and enthusiastic yet professional. </p>
+		      </div>
+		
+		   <h2 class="clear-float">Our Solution</h2>
+		   
+
+		    	<div class="three-columns">
+		      <h3>Multi-Tier Navigation</h3>
+		      <p>A multi-tier navigation will allow students to easily find information and relevant content within lecture notes and other parent pages. Complete with a horizontal main menu and a left sidebar menu, this new navigation also prevents from having a single deep nested navigation.</p>
+		      </div>
+
+		      <div class="three-columns">
+		      <h3>Sectioned Lecture Submenus</h3>
+		      <p>Each lecture will be divided into different sections, with each section appearing as a submenu item on the sidebar. Students will be able to expand each lecture, and navigate to their preferred section of the lecture by clicking on the respective submenu item, such as exercises, homework assignments, and learning objectives. </p>
+		      </div>
+
+		      <div class="three-columns">
+		      <h3>Seperate Exercise Section</h3>
+		      <p>Students can now easily access the lecture exercises via the 'exercise section' which will appear within each lecture's sidebar. Keeping the exercises on its respective lecture page allows the student to follow the flow of the lecture and to be able to easily associate the exercise with relevant parts of the lecture.</p>
+		      </div>
+
+		      <div class="three-columns">
+		      <h3>Searchable Content</h3>
+		      <p>With the addition of a search bar in the header, students can now easily find information using keywords without having to spend more time digging through each lecture page.</p>
+		      </div>
+
+		      <div class="three-columns">
+		      <h3>Student Forum</h3>
+		      <p>Being able to engage and interact with your classmates and professor is just as important outside of the classroom. Our student forum now only allows the student to ask questions but also creates a supportive online learning environment. Students and their professor can discuss topics such as homework assignments, lecture notes, or current website trends.</p>
+		      </div>
+
+		      <div class="three-columns">
+		      <h3>Captivating Homepage</h3>
+		      <p>As the main landing page, the homepage should create a first good impression and be able to tell the viewer what the website is used for. Our homepage is complete with a compelling image and effective call to action. Upon landing on the homepage, the viewer will be able to easily understand the website goals. </p>
+		      </div>
+
+		      <div class="three-columns">
+		      <h3>Inviting Colour Scheme</h3>
+		      <p>As the primary learning tool for the course, it is integral that the website can create an environment that invites the viewer to want to stay on the website. Our proposed colour scheme of blue, golden-yellow, and light grey creates a healthy balance between professional, educational, and engaging.</p>
+		      </div>
+
+		      <div class="three-columns">
+		      <h3>Back-To-Top Feature</h3>
+		      <p>Simple yet effective, our addition of a more visible and intuitive back-to-top feature decreases the amount of scrolling the student has to do. While the current website has this feature, it is not easily visible as it only appears at the bottom of each page.</p>
+		      </div>
+
+		      <div class="three-columns">
+		      <h3>Jquery blah</h3>
+		      <p>
+		 
+		      </p>
+			</div>
+		     
+		</div>
+	</section>
+
+
+
+	<footer>
+		<div class="content-container">
+			<ul>
+				<li><a href="#top">Top of Page</a></li>
+				<li><a href="#">More links?</a></li>
+				<li><a href="#">More links?</a></li>
+				<li><a href="#">More links?</a></li>
+				<li><a href="#">More links?</a></li>
+			</ul>
+
+
+		</div>
+
+		<div id="bottom-border">
+			<small>Metasite &copy; 2017 AKA</small>
+		</div>
+
+	</footer>
+
+</body>
 </html>

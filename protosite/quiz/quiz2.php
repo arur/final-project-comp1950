@@ -1,69 +1,5 @@
-<?php 
-
-function checkSubmission($data) {
-	
-	foreach ($data as $answers) {
-		if(trim($answers) == "") {
-			return true;
-		}
-	}
-
-	return false;
-}
-
-
-$message = '';
-$submitButton = '';
-$editButton = '';
-
+<?php
 session_start();
-
-
-if(count($_POST) > 0) {
-
-
-	foreach ($_POST as $key => $value) {
-	   if ($value != "") {  
-
-	   	$_SESSION[$key] = $value;
-	   }
-	   else if ($value == '' && isset($_SESSION[$key])) {
-	      unset($_SESSION[$key]);
-	   }
-	}
-
-
-	$blankAnswers = checkSubmission($_POST);
-
-	if($blankAnswers === true) {
-		$message = 'You did not fill out an answer for one or more questions. Would you still like to submit the quiz?'; 
-
-		 
-    $editButton = '<a href="quiz2.php" class="btn btn-outline-primary ps-button-spacing" role="button">Edit Answers</a>';
-		$submitButton = '<a href="submission.php" class="btn btn-outline-primary" role="button">Submit Now</a>';
-	}
-	else {
-		$message = 'The quiz was submitted successfully.';
-
-    $_SESSION = array();
-
-    session_destroy();
-	}
-
-}
-else {
-
-	// if(count($_SESSION) == 0) {
-	// 	header('Location: ../quizzes.html');
-	// 	exit;
-	// }
-
-	$message = 'The quiz was submitted successfully.';
-
-	$_SESSION = array();
-	session_destroy();
-}
-
 ?>
 
 
@@ -80,6 +16,7 @@ else {
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/proto-site.css">
+    <link rel="alternate stylesheet" title="projector" href="../css/projector.css">
 
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"
@@ -110,13 +47,13 @@ else {
           <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Lectures</a>
+                <a class="nav-link" href="../lecture/two.html">Lectures</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Resources</a>
+                <a class="nav-link" href="../resources/resources.html">Resources</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="#">Quizzes</a>
@@ -175,12 +112,56 @@ else {
               <section id="s1">
                 <h3>Quiz 2</h3>
                 <div class="contblock">
-
-                	<?php echo $message;
-        						echo $editButton;
-                        echo $submitButton;
-        					?>
-
+                  <form method="post" action="submission.php">
+                    <ol>
+                        <li>  
+                          HTML is meant to be “well formed”, which carries a series of strict rules for how to write code. Briefly state three of these rules: <span class="ps-marks">(3 marks)</span>
+                          <br />
+                          <textarea name="q1" id="q1" class="ps-answer-box"><?php 
+                            if(isset($_SESSION['q1'])) {
+                              echo $_SESSION['q1'];
+                            }
+                          ?></textarea>
+                        </li>
+                        <li>                        
+                          Write out the complete HTML5 DOCTYPE. <span class="ps-marks">(2 marks)</span>
+                          <br />
+                          <textarea name="q2" id="q2" class="ps-answer-box"><?php 
+                            if(isset($_SESSION['q2'])) {
+                              echo $_SESSION['q2'];
+                            }
+                          ?></textarea>
+                        </li>
+                        <li>                        
+                          HTML5 introduces a series of new semantic tags like &lt;header&gt; and &lt;footer>&gt;. Name three other new semantic tags in HTML5. <span class="ps-marks">(3 marks)</span>
+                          <br />
+                          <textarea name="q3" id="q3" class="ps-answer-box"><?php 
+                            if(isset($_SESSION['q3'])) {
+                              echo $_SESSION['q3'];
+                            }
+                          ?></textarea>
+                        </li>
+                        <li>                        
+                          Which of the various Markup Languages is the current W3C recommendation? <span class="ps-marks">(1 mark)</span>
+                          <br />
+                          <textarea name="q4" id="q4" class="ps-answer-box"><?php 
+                            if(isset($_SESSION['q4'])) {
+                              echo $_SESSION['q4'];
+                            }
+                          ?></textarea>
+                        </li>
+                        <li>                        
+                          HTML5 includes rules for how browsers handle errors in the code. <span class="ps-marks">(1 mark)</span>
+                          <br />
+                          <textarea name="q5" id="q5" class="ps-answer-box"><?php 
+                            if(isset($_SESSION['q5'])) {
+                              echo $_SESSION['q5'];
+                            }
+                          ?></textarea>
+                        </li>
+                    </ol>
+                    <input type="submit" id="ps-submit" class="btn btn-outline-primary" value="Submit">
+                  </form>
                 </div>
             </article>
           </div>
