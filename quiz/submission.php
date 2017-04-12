@@ -53,10 +53,10 @@ if(count($_POST) > 0) {
 }
 else {
 
-	if(count($_SESSION) == 0) {
-		header('Location: ../quizzes.html');
-		exit;
-	}
+	// if(count($_SESSION) == 0) {
+	// 	header('Location: ../quizzes.html');
+	// 	exit;
+	// }
 
 	$message = 'The quiz was submitted successfully.';
 
