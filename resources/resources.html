@@ -10,7 +10,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/resources.css">
+    <link rel="stylesheet" href="css/proto-site.css">
+    <link rel="alternate stylesheet" title="projector" href="css/projector.css">
 
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"
@@ -68,21 +69,22 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 ps-sidebar">
-            <div class="ps-links">
-
-              <div class="ps-toc-item active">
-                <a class="ps-toc-link" href="#">&nbsp; Resources</a>
-                <ul class="nav ps-sidenav">
-                  <li><a href="#s1">Validators</a></li>
-                  <li><a href="#s2">Web Browsers</a></li>
-                  <li><a href="#s3">Diagnostic Tools</a></li>
-                  <li><a href="#s4">HTML Text Editors</a></li>
-                  <li><a href="#s5">FTP Client Utilities</a></li>
-                  <li><a href="#s6">Texts</a></li>
-
-                </ul>
+            <div id="toc">
+              <div class="ps-toc-item">
+                <a class="ps-toc-title collapsed" data-toggle="collapse" href="#secondaryNav">Resources</a>
               </div>
-
+              <div id="secondaryNav" class="ps-links collapse">
+                <div class="ps-toc-item active">
+                  <ul class="nav ps-sidenav">
+                    <li><a href="#s1">Validators</a></li>
+                    <li><a href="#s2">Web Browsers</a></li>
+                    <li><a href="#s3">Diagnostic Tools</a></li>
+                    <li><a href="#s4">HTML Text Editors</a></li>
+                    <li><a href="#s5">FTP Client Utilities</a></li>
+                    <li><a href="#s6">Texts</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-9 ps-content">

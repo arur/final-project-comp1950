@@ -11,6 +11,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/proto-site.css">
+    <link rel="alternate stylesheet" title="projector" href="css/projector.css">
 
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"
@@ -68,89 +69,94 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 ps-sidebar">
-            <div class="ps-links">
+            <div id="toc">
               <div class="ps-toc-item">
-                <a class="ps-toc-link" href="#">01 | tools & standarts</a>
-                <ul class="nav ps-sidenav">
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                </ul>
+                <a class="ps-toc-title collapsed" data-toggle="collapse" href="#secondarynav">lectures</a>
               </div>
-              <div class="ps-toc-item active">
-                <a class="ps-toc-link" href="#">02 | html5</a>
-                <ul class="nav ps-sidenav">
-                  <li><a href="#s1">Hypertext Markup Language</a></li>
-                  <li><a href="#s2">HTML Created</a></li>
-                  <li><a href="#s3">HTML on the loose!</a></li>
-                  <li><a href="#s4">Attempting to fix the problem</a></li>
-                  <li><a href="#s5">Tighten up!</a></li>
-                  <li><a href="#s6">What is different about XHTML?</a></li>
-                  <li><a href="#s7">XHTML Documents</a></li>
+              <div id="secondaryNav" class="ps-links collapse">
+                <div class="ps-toc-item">
+                  <a class="ps-toc-link" href="#">01 | tools & standarts</a>
+                  <ul class="nav ps-sidenav">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+                <div class="ps-toc-item active">
+                  <a class="ps-toc-link" href="#">02 | html5</a>
+                  <ul class="nav ps-sidenav">
+                    <li><a href="#s1">Hypertext Markup Language</a></li>
+                    <li><a href="#s2">HTML Created</a></li>
+                    <li><a href="#s3">HTML on the loose!</a></li>
+                    <li><a href="#s4">Attempting to fix the problem</a></li>
+                    <li><a href="#s5">Tighten up!</a></li>
+                    <li><a href="#s6">What is different about XHTML?</a></li>
+                    <li><a href="#s7">XHTML Documents</a></li>
 
-                </ul>
-              </div>
-              <div class="ps-toc-item">
-                <a class="ps-toc-link" href="#">03 | css techniques</a>
-                <ul class="nav ps-sidenav">
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                  <li><a href="#">Link</a></li>
-                </ul>
-              </div>
-              <div class="ps-toc-item">
-                <a class="ps-toc-link" href="#">04 | css layouts</a>
-                <ul class="nav ps-sidenav">
-                  <li><a href="#">Link</a></li>
-                </ul>
-              </div>
-              <div class="ps-toc-item">
-                <a class="ps-toc-link" href="#">05 | responsive css</a>
-                <ul class="nav ps-sidenav">
-                  <li><a href="#">Link</a></li>
-                </ul>
-              </div>
-              <div class="ps-toc-item">
-                <a class="ps-toc-link" href="#">06 | css3</a>
-                <ul class="nav ps-sidenav">
-                  <li><a href="#">Link</a></li>
-                </ul>
-              </div>
-              <div class="ps-toc-item">
-                <a class="ps-toc-link" href="#">07 | javascript frameworks</a>
-                <ul class="nav ps-sidenav">
-                  <li><a href="#">Link</a></li>
-                </ul>
-              </div>
-              <div class="ps-toc-item">
-                <a class="ps-toc-link" href="#">08 | dynamic content</a>
-                <ul class="nav ps-sidenav">
-                  <li><a href="#">Link</a></li>
-                </ul>
-              </div>
-              <div class="ps-toc-item">
-                <a class="ps-toc-link" href="#">09 | templating, seo</a>
-                <ul class="nav ps-sidenav">
-                  <li><a href="#">Link</a></li>
-                </ul>
-              </div>
-              <div class="ps-toc-item">
-                <a class="ps-toc-link" href="#">10 | methodology</a>
-                <ul class="nav ps-sidenav">
-                  <li><a href="#">Link</a></li>
-                </ul>
-              </div>
-              <div class="ps-toc-item">
-                <a class="ps-toc-link" href="#">11 | project work</a>
-                <ul class="nav ps-sidenav">
-                  <li><a href="#">Link</a></li>
-                </ul>
+                  </ul>
+                </div>
+                <div class="ps-toc-item">
+                  <a class="ps-toc-link" href="#">03 | css techniques</a>
+                  <ul class="nav ps-sidenav">
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+                <div class="ps-toc-item">
+                  <a class="ps-toc-link" href="#">04 | css layouts</a>
+                  <ul class="nav ps-sidenav">
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+                <div class="ps-toc-item">
+                  <a class="ps-toc-link" href="#">05 | responsive css</a>
+                  <ul class="nav ps-sidenav">
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+                <div class="ps-toc-item">
+                  <a class="ps-toc-link" href="#">06 | css3</a>
+                  <ul class="nav ps-sidenav">
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+                <div class="ps-toc-item">
+                  <a class="ps-toc-link" href="#">07 | javascript frameworks</a>
+                  <ul class="nav ps-sidenav">
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+                <div class="ps-toc-item">
+                  <a class="ps-toc-link" href="#">08 | dynamic content</a>
+                  <ul class="nav ps-sidenav">
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+                <div class="ps-toc-item">
+                  <a class="ps-toc-link" href="#">09 | templating, seo</a>
+                  <ul class="nav ps-sidenav">
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+                <div class="ps-toc-item">
+                  <a class="ps-toc-link" href="#">10 | methodology</a>
+                  <ul class="nav ps-sidenav">
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
+                <div class="ps-toc-item">
+                  <a class="ps-toc-link" href="#">11 | project work</a>
+                  <ul class="nav ps-sidenav">
+                    <li><a href="#">Link</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
