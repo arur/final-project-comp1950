@@ -29,9 +29,9 @@ p {
 
 h2 {
 	font-size: 25px;
-	border-left: 5px double black;
 	padding-left: 5px;
 	margin-top: 50px;
+	text-align: center;
 
 }
 
@@ -189,6 +189,7 @@ nav > ul {
 
 .p-margin-bottom {
 	margin-bottom: 30px;
+	margin-top 5px;
 }
 
 
