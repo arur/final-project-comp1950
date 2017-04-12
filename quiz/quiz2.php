@@ -113,8 +113,7 @@ session_start();
                 <div class="contblock">
                   <form method="post" action="submission.php">
                     <ol>
-                      <label for="q1">
-                        <li>                        
+                        <li>  
                           HTML is meant to be “well formed”, which carries a series of strict rules for how to write code. Briefly state three of these rules: <span class="ps-marks">(3 marks)</span>
                           <br />
                           <textarea name="q1" id="q1" class="ps-answer-box"><?php 
@@ -123,30 +122,24 @@ session_start();
                             }
                           ?></textarea>
                         </li>
-                      </label>
-                      <label for="q2">
                         <li>                        
                           Write out the complete HTML5 DOCTYPE. <span class="ps-marks">(2 marks)</span>
                           <br />
                           <textarea name="q2" id="q2" class="ps-answer-box"><?php 
-                            if(isset($_SESSION['q1'])) {
-                              echo $_SESSION['q1'];
+                            if(isset($_SESSION['q2'])) {
+                              echo $_SESSION['q2'];
                             }
                           ?></textarea>
                         </li>
-                      </label>
-                      <label for="q3">
                         <li>                        
                           HTML5 introduces a series of new semantic tags like &lt;header&gt; and &lt;footer>&gt;. Name three other new semantic tags in HTML5. <span class="ps-marks">(3 marks)</span>
                           <br />
                           <textarea name="q3" id="q3" class="ps-answer-box"><?php 
-                            if(isset($_SESSION['q2'])) {
+                            if(isset($_SESSION['q3'])) {
                               echo $_SESSION['q3'];
                             }
                           ?></textarea>
                         </li>
-                      </label>
-                      <label for="q4">
                         <li>                        
                           Which of the various Markup Languages is the current W3C recommendation? <span class="ps-marks">(1 mark)</span>
                           <br />
@@ -156,8 +149,6 @@ session_start();
                             }
                           ?></textarea>
                         </li>
-                      </label>
-                      <label for="q5">
                         <li>                        
                           HTML5 includes rules for how browsers handle errors in the code. <span class="ps-marks">(1 mark)</span>
                           <br />
@@ -167,9 +158,8 @@ session_start();
                             }
                           ?></textarea>
                         </li>
-                      </label>
                     </ol>
-                    <input type="submit" id="ps-submit" class="btn btn-outline-primary">
+                    <input type="submit" id="ps-submit" class="btn btn-outline-primary" value="Submit">
                   </form>
                 </div>
             </article>
