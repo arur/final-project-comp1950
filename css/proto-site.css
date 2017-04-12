@@ -185,3 +185,24 @@
     padding-left: 0;
   }
 }
+
+
+/* quizzes content only*/
+.ps-answer-box {
+  width: 760px;
+}
+
+.ps-marks {
+  color: gray;
+  font-style: italic;
+}
+
+#ps-submit {
+  float: right;
+}
+
+.ps-button-spacing {
+  margin-right: 10px;
+}
+
+
