@@ -2,8 +2,6 @@
 
 function checkSubmission($data) {
 	
-	$message = "";
-
 	foreach ($data as $answers) {
 		if(trim($answers) == "") {
 			return true;
@@ -47,15 +45,22 @@ if(count($_POST) > 0) {
 	else {
 		$message = 'The quiz was submitted successfully.';
 
-		$_SESSION = [];
-		session_destroy();
+    $_SESSION = array();
+
+    session_destroy();
 	}
 
 }
 else {
+
+	if(count($_SESSION) == 0) {
+		header('Location: ../quizzes.html');
+		exit;
+	}
+
 	$message = 'The quiz was submitted successfully.';
 
-	$_SESSION = [];
+	$_SESSION = array();
 	session_destroy();
 }
 
@@ -172,9 +177,8 @@ else {
                 <div class="contblock">
 
                 	<?php echo $message;
-        								echo $editButton;
+        						echo $editButton;
                         echo $submitButton;
-
         					?>
 
                 </div>
