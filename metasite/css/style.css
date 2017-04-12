@@ -78,6 +78,7 @@ h3 {
 	font-family: 'Marcellus', serif;
 	margin: 0;
 	color: #288384;
+	text-align: center;
 }
 
 
@@ -199,6 +200,7 @@ nav > ul {
 	float: left;
 	margin-right: 45px;
 	margin-bottom: 30px;
+
 }
 
 .three-columns:nth-of-type(3n) {
