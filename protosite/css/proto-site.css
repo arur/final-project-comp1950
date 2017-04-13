@@ -66,6 +66,15 @@
   padding: 0.5rem 0;
   border-bottom: 1px solid #eee;
 }
+
+.ps-toc-link-inactive {
+  display: block;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  color: #a6a6a6;
+  padding-left: 4px;
+}
+
 /* ps-sidenav */
 .ps-sidenav {
   display: none;
@@ -209,6 +218,10 @@
 
 .ps-button-spacing {
   margin-right: 10px;
+}
+
+#ps-quiz-buttons {
+  margin-top: 30px;
 }
 
 /* proto-home content only */
