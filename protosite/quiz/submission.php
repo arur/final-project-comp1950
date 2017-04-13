@@ -150,22 +150,22 @@ else {
                   <a class="ps-toc-link" href="quiz2.php">Quiz 2</a>
                 </div>
                 <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">Quiz 3</a>
+                  <span class="ps-toc-link-inactive">Quiz 3</span>
                 </div>
                 <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">Quiz 4</a>
+                  <span class="ps-toc-link-inactive">Quiz 4</span>
                 </div>
                 <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">Quiz 5</a>
+                  <span class="ps-toc-link-inactive">Quiz 5</span>
                 </div>
                 <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">Quiz 6</a>
+                  <span class="ps-toc-link-inactive">Quiz 6</span>
                 </div>
                 <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">Quiz 7</a>
+                  <span class="ps-toc-link-inactive">Quiz 7</span>
                 </div>
                 <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">Quiz 8</a>
+                  <span class="ps-toc-link-inactive">Quiz 8</span>
                 </div>
               </div>
             </div>
@@ -176,11 +176,13 @@ else {
               <section id="s1">
                 <h3>Quiz 2</h3>
                 <div class="contblock">
+                	<?php echo $message; ?>
+                  <div id="ps-quiz-buttons">
 
-                	<?php echo $message;
-        						echo $editButton;
+        					<?php echo $editButton;
                         echo $submitButton;
         					?>
+                  </div>
 
                 </div>
             </article>
