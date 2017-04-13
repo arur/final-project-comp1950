@@ -4,8 +4,15 @@ body {
 .ps-content .row {
   flex-direction: column;
 }
-.ps-sidebar, .ps-content {
+.ps-sidebar,
+.ps-content,
+.description,
+.home-sidebar {
   max-width: 100%;
+}
+#banner h2 {
+  max-width: 640px;
+  margin: auto;
 }
 .ps-content > article {
   padding-left: 0;
