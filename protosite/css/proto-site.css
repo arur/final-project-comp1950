@@ -97,6 +97,12 @@
 .ps-content section {
   line-height: 1.7;
 }
+.ps-exercise {
+  border: 1px solid #eee;
+  border-left: 0.25rem solid var(--accent-color);
+  border-radius: 0.25rem;
+  padding: 0 1.25rem;
+}
 /* ps-footer */
 .ps-footer {
   background: var(--main-color);
