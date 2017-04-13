@@ -27,11 +27,18 @@ p {
 }
 
 
+h1{
+	color: #fff;
+	font-size: 40px;
+}
+
+
 h2 {
-	font-size: 25px;
+	font-size: 28px;
 	padding-left: 5px;
-	margin-top: 50px;
 	text-align: center;
+	color: #0B3C5D;
+	margin-top: 50px;
 
 }
 
@@ -40,6 +47,10 @@ h3 {
 	margin-bottom: 5px;
 	color: #067cb9;
 	font-size: 1.25em;
+}
+
+ol{
+	color: white;
 }
 
 .content-container {
@@ -64,6 +75,7 @@ h3 {
 	text-decoration: none;
 }
 
+/*
 .section-style {
 	background-color: white;
 	padding: 25px;
@@ -72,12 +84,12 @@ h3 {
 	box-sizing: border-box;
 
 }
-
+*/
 
 .section-heading {
 	font-family: 'Marcellus', serif;
 	margin: 0;
-	color: #288384;
+	color: #fff;
 	text-align: center;
 }
 
@@ -143,7 +155,7 @@ nav > ul {
 	display: table;
 	width: 100%;
 	height: 500px;
-	background-color: white;
+	background-color: #328CC1;
 	text-align: center;
 }
 
@@ -156,22 +168,39 @@ nav > ul {
 #intro-heading > h1 {
 	margin:0;
 	text-align: center;
-	font-size: 50px;
+	font-size: 55px;
 	margin-bottom: 20px;
-	font-family: 'Petit Formal Script', serif;
+	margin-top: 35px;
+	font-family: 'petit formal script', arial, serif;
+}
+
+#callout{
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	font-size: 23px;
+	line-height: 28px;
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 15px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	background-color: 
 }
 
 
 #protosite-link {
 	font-size: 20px;
 	text-decoration: none;
-        border: 1px solid;
-        padding: 5px;
-        border-radius: 4px;
+	color: white;
+	padding: 10px;
+	background-color: #D9B310;
+	border-radius: 5px;
+
 }
 
+
 #image-main {
-	background-image: url('../img/main.jpg');
+	background-image: url('../img/mockup.jpg');
 	height: 500px;
 	background-repeat: no-repeat;
 /*	background-attachment: fixed;*/
@@ -184,17 +213,41 @@ nav > ul {
 
 /* SECTION-RATIONALE rules
 ----------------------------------------------------*/
-
+/*
 #section-rationale {
 	padding-top: 50px;
 	overflow: auto;
 }
+*/
+.rationale-container{
+	width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
 
+#goals-container{
+	background-color: #1D2731;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+/*
+#issues-container{
+	background-color: pink;
+	
+}
+
+#solutions-container{
+	background-color: #e3e3e3;
+	
+}
+*/
 
 .p-margin-bottom {
-	margin-bottom: 30px;
-	margin-top 5px;
+	
 	text-align: center;
+	color: #fff;
 }
 
 
@@ -266,7 +319,7 @@ footer a:hover {
 
 #bottom-border {
 	height: 22px;
-	background-color: #288384;
+	background-color: #1D2731;
 	width: 100%;
 	text-align: center;
 	line-height: 22px;
