@@ -142,7 +142,7 @@ a:visited:before {
 }
 #primaryNav li a:link:before,
 #primaryNav li a:visited:before {
-	color: #1D2731;
+	color: #e2f4fd;
 }
 
 /* --------	Second Level --------- */
@@ -156,8 +156,8 @@ a:visited:before {
 }
 
 #primaryNav li li a {
-	background-color: #cee3ac;
-	border-color: #b8da83;
+	background-color: #328CC1;
+	border-color: #1370a7;
 }
 #primaryNav li li a:hover {
 	border-color: #94b75f;
@@ -171,7 +171,7 @@ a:visited:before {
 }
 #primaryNav li li a:link:before,
 #primaryNav li li a:visited:before {
-	color: #8faf5c;
+	color: #105a86;
 }
 
 /* --------	Third Level --------- */
@@ -191,8 +191,8 @@ a:visited:before {
 	padding: 5px 0;
 }
 #primaryNav li li li a {
-	background-color: #fff7aa;
-	border-color: #e3ca4b;
+	background-color: #D9B310;
+	border-color: #d6bb33;
 	font-size: 12px;
 	padding: 5px 0;
 	width: 80%;
@@ -211,7 +211,7 @@ a:visited:before {
 }
 #primaryNav li li li a:link:before,
 #primaryNav li li li a:visited:before {
-	color: #ccae14;
+	color: #a0880d;
 	font-size: 9px;
 }
 
