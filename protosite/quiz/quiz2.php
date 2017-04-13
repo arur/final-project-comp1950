@@ -86,22 +86,22 @@ session_start();
                   <a class="ps-toc-link" href="quiz2.php">Quiz 2</a>
                 </div>
                 <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">Quiz 3</a>
+                  <span class="ps-toc-link-inactive">Quiz 3</span>
                 </div>
                 <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">Quiz 4</a>
+                  <span class="ps-toc-link-inactive">Quiz 4</span>
                 </div>
                 <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">Quiz 5</a>
+                  <span class="ps-toc-link-inactive">Quiz 5</span>
                 </div>
                 <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">Quiz 6</a>
+                  <span class="ps-toc-link-inactive">Quiz 6</span>
                 </div>
                 <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">Quiz 7</a>
+                  <span class="ps-toc-link-inactive">Quiz 7</span>
                 </div>
                 <div class="ps-toc-item">
-                  <a class="ps-toc-link" href="#">Quiz 8</a>
+                  <span class="ps-toc-link-inactive">Quiz 8</span>
                 </div>
               </div>
             </div>
@@ -133,7 +133,7 @@ session_start();
                           ?></textarea>
                         </li>
                         <li>                        
-                          HTML5 introduces a series of new semantic tags like &lt;header&gt; and &lt;footer>&gt;. Name three other new semantic tags in HTML5. <span class="ps-marks">(3 marks)</span>
+                          HTML5 introduces a series of new semantic tags like &lt;header&gt; and &lt;footer&gt;. Name three other new semantic tags in HTML5. <span class="ps-marks">(3 marks)</span>
                           <br />
                           <textarea name="q3" id="q3" class="ps-answer-box"><?php 
                             if(isset($_SESSION['q3'])) {
